@@ -3,6 +3,7 @@ import { MoviesProps } from "@/interfaces";
 import { NextApiRequest, NextApiResponse } from "next";
 export default async function handler (request: NextApiRequest, response: NextApiResponse)  {
 
+  //update
   if (request.method === "POST") {
     const { year, page, genre } = request.body;
     const date = new Date();
